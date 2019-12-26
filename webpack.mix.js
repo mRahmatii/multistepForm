@@ -17,6 +17,7 @@ mix
     .js('resources/js/frontend.js', 'public/js/frontend.min.js')
     .js('resources/js/backend.js', 'public/js/backend.min.js')
     .options({
+        
         processCssUrls: false
     });;
 
