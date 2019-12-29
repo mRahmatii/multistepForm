@@ -12,10 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('frontend.welcome');
+    $states=\App\City::where('parent_id',0)->pluck('name','id');
+
+    return view('frontend.welcome',compact('states'));
 });
 
 Auth::routes(['register' => false]);
 
-Route::get('/home', 'HomeController@index')->name('home');
 
+
+Route::group(['prefix' => 'admin'], function() {
+
+    Route::post('users/cities','UserController@cities');
+    Route::resource('users', 'UserController');
+
+});

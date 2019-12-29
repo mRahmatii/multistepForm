@@ -36,7 +36,7 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{route('providers.index')}}"><i class="fa fa-circle-o"></i>سرویسکاران </a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i>سرویسکاران </a></li>
                     <li><a href="{{route('users.index')}}"><i class="fa fa-circle-o"></i>مشتریان </a></li>
                 </ul>
             </li>
@@ -75,7 +75,7 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{route('bookings.index')}}"><i class="fa fa-circle-o"></i>کلیه سفارشات </a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i>کلیه سفارشات </a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -87,9 +87,9 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{route('categories.index')}}"><i class="fa fa-circle-o"></i>لیست دسته ها </a></li>
-                    <li><a href="{{route('services.index')}}"><i class="fa fa-circle-o"></i>لیست خدمات</a></li>
-                    <li><a href="{{route('subservices.index')}}"><i class="fa fa-circle-o"></i>لیست زیردسته خدمات </a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i>لیست دسته ها </a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i>لیست خدمات</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i>لیست زیردسته خدمات </a></li>
                 </ul>
             </li>
 
@@ -102,7 +102,7 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{route('cities.index')}}"><i class="fa fa-circle-o"></i>لیست </a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i>لیست </a></li>
                 </ul>
             </li>
 
@@ -115,7 +115,7 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{route('services.index')}}"><i class="fa fa-circle-o"></i>لیست </a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i>لیست </a></li>
                 </ul>
             </li>
 

@@ -9,7 +9,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @stack('meta')
     <link rel="stylesheet" href="{{ mix('/css/frontend.min.css') }}">
-    <script src="{{ mix('/js/frontend.min.js') }}"></script>
+    @yield('stylesheets')
+
     @stack('header_scripts')
 </head>
 <body data-page="@yield('page_name')">
@@ -32,6 +33,8 @@
 
 @include('frontend.layouts.footer')
 
+<script src="{{ mix('/js/frontend.min.js') }}"></script>
+<script src="{{ asset('/js/public.js') }}"></script>
 @stack('footer_scripts')
 </body>
 </html>
