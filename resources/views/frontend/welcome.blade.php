@@ -38,7 +38,7 @@
                             </div>
 
                             <div class="form-group" style="margin-bottom: 2.5rem;">
-                                <select name="state_id" class="form__input" data-content="پاسخ به این سوال ضروری است" style="padding: 0.6rem 2rem;">
+                                <select name="state_id" class="form__input" data-content="پاسخ به این سوال ضروری است" style="padding: 0.6rem 2rem;" placehoder="استان">
                                     <option value="" selected>استان مورد نظر خود را انتخاب کنید</option>
                                     @foreach($states as $key=>$state)
                                         <option value="{{$key}}">{{$state}}</option>
@@ -47,7 +47,7 @@
                             </div>
 
                             <div class="form-group" style="margin-bottom: 2.5rem;">
-                                <select name="city_id" id="cities" class="form__input" data-content="پاسخ به این سوال ضروری است" style="padding: 0.6rem 2rem;">
+                                <select name="city_id" id="cities" class="form__input" data-content="پاسخ به این سوال ضروری است" style="padding: 0.6rem 2rem;" placehoder="شهر">
                                     <option value="" selected>شهر مورد نظر خود را انتخاب کنید</option>
 
                                 </select>

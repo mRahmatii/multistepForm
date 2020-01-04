@@ -73,10 +73,9 @@
                                 @csrf
 
                                 <div class="form-group">
-                                    <label for="email" class="col-md-4">آدرس پست
-                                        الکترونیکی</label>
+                                    <label for="email" class="col-md-4">ایمیل</label>
 
-                                        <input id="email" type="email"
+                                        <input id="email" type="text"
                                                class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }} form__input"
                                                name="email" value="{{ old('email') }}" required autofocus>
 

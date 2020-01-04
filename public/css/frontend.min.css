@@ -12777,12 +12777,9 @@ h1 {
   display: flex;
   width: 100%;
   height: 50px;
-  -webkit-box-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-around;
   -webkit-box-align: center;
           align-items: center;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 .progressbar__circle {
   display: inline-block;
@@ -12796,29 +12793,25 @@ h1 {
   height: 20px;
   width: 20px;
 }
-.progressbar__item:before {
+.progressbar__item:not(:first-child):before {
   content: "";
-  width: 135px;
+  width: 180px;
   height: 3px;
-  background: #eee;
   position: absolute;
   top: 45%;
   left: 100%;
-}
-.progressbar__item:last-child:after {
-  content: "";
-  width: 183px;
-  height: 3px;
-  background: #eee;
-  position: absolute;
-  top: 45%;
-  right: 100%;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #55c57a), color-stop(50%, #eee));
+  background: linear-gradient(to left, #55c57a 50%, #eee 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 .progressbar .active .progressbar__circle {
   border: solid #55c57a 3px;
 }
-.progressbar .active:before, .progressbar .active:after {
-  background: #55c57a;
+.progressbar .active:before {
+  background-position: right bottom;
 }
 
 .form__input {

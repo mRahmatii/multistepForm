@@ -26,11 +26,11 @@
                     </div>
                 </div>
                 <div class="box-body">
-                    <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                    <div id="example1_wrapper" >
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="dataTables_length">
-                                    <select name="limit" class="form-control input-sm">
+                                    <select name="limit" class="form-control col-md-2">
                                         <option value="10">10</option>
                                         <option value="25">25</option>
                                         <option value="50">50</option>
@@ -59,6 +59,44 @@
                                 <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
                             </div>
                         @endif
+                        <div class="filters-btn">
+                            <button id="filter-btn" class="btn btn-primary btn-sm btn-filters bg-blue"><i class="fa fa-filter"></i> فیلترها</button>
+                        </div>
+                        <div class="filters-section">
+                            <div class="row">
+
+                                <div class="form-group col-md-3">
+                                    <input  autocomplete="off" name="fromDate" type="text" class="date form-control" placeholder="از تاریخ">
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <input autocomplete="off" name="toDate" type="text" class="date form-control" placeholder="تا تاریخ">
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <select class="form-control selectpicker" name="city_id">
+                                        <option value="">شهر</option>
+                                        @foreach($cities as $city)
+                                            <option class="form-control" value="{{$city->id}}">{{$city->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <select class="form-control" name="order">
+                                        <option value="">انتخاب کنید</option>
+                                        <option value="desc">نزولی</option>
+                                        <option value="asc">صعودی</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group col-md-12 text-center">
+                                <button id="applyFilter" type="submit" class="btn btn-primary btn-sm bg-blue">اعمال فیلتر</button>
+                            </div>
+                        </div>
                         <div class="row" id="allDataUpdate">
 
                             @include('backend.Elements.users')

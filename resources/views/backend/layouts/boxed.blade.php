@@ -31,7 +31,7 @@
 
 <body class="hold-transition skin-purple fixed sidebar-mini">
 <div class="loading">
-<img class="d-none" src="{{asset('img')}}">
+<img class="d-none" src="{{asset('img/loading.png')}}">
 </div>
 
 <!-- Site wrapper -->
